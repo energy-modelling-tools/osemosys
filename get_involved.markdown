@@ -16,11 +16,7 @@ permalink: /contact/
       <h3 class="section-title text-center mb-4">💬 Join Our Community</h3>
       
       <!-- Discourse Link at the start -->
-      <div class="text-center mb-4">
-        <a href="https://forum.u4ria.org/" target="_blank" class="btn btn-primary btn-lg">
-          Visit the Discourse Forum →
-        </a>
-      </div>
+      {% include forum_cta.html %}
 
       <p class="text-center lead mb-4">
         Join other OSeMOSYS practitioners by becoming part of our Discourse community—a dedicated online space for collaboration, learning, and sharing.

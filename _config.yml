@@ -12,6 +12,7 @@ description: "GitHub helps government build software better, together"
 baseurl: "/osemosys"
 permalink: "/stories/:title"
 relative_permalinks: false
+forum_slug: "osemosys"
 
 # Remote Theme Configuration
 remote_theme: energy-modeling-tools/page-template@main
