@@ -7,7 +7,7 @@
 
 # global settings
 title: OSeMOSYS
-logo: "/assets/img/osemosys-logo.png"
+logo: "/assets/img/logos/OSeMOSYS.svg"
 description: "GitHub helps government build software better, together"
 baseurl: "/osemosys"
 permalink: "/stories/:title"
