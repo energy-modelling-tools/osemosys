@@ -64,6 +64,18 @@ permalink: /learning_capacity/
       <h3 class="alt-h3 text-center mb-3 animate-in">🌍 Explore EMP Events</h3>
       
       <div class="clearfix gutter-spacious">
+        <div class="col-md-4 float-left animate-in mb-4">
+          <h3 class="alt-h3 mb-3">🛠️ Flatpack Program</h3>
+          <p>
+            <a href="https://curriculum.climatecompatiblegrowth.com/courses/963fc47f-0495-47af-954c-71edecd2a0a9" target="_blank">
+              <img src="{{ site.logo | relative_url }}" class="img-fluid" alt="OSeMOSYS Teaching Kit"/>
+            </a>
+          </p>
+          <p class="text-gray text-justify">OSeMOSYS Teaching Kit provides learning materials for an introductory course on using the OSeMOSYS tool to comprehensively study the topic of energy systems analysis by combining academic and practical aspects. It includes editable lecture slides, hands-on exercises, sample learning objectives, and a suggested course timetable.</p>
+          <p>
+            <a href="https://curriculum.climatecompatiblegrowth.com/courses/963fc47f-0495-47af-954c-71edecd2a0a9" target="_blank" class="btn btn-outline-primary sky-blue-accent d-block d-sm-inline-block px-1 px-md-3">Open Teaching Kit →</a>
+          </p>
+        </div>
         {% for event in site.data.learning_events.events %}
         <div class="col-md-4 float-left animate-in mb-4">
           <h3 class="alt-h3 mb-3">{{ event.title }}</h3>
@@ -96,9 +108,6 @@ permalink: /learning_capacity/
         </div>
       </div>
     </div>
-
-    <h3 class="alt-h3 mt-3 animate-in">🛠️ Flatpack Program</h3>
-    <p class="animate-in">Content to be updated soon.</p>
 
   </div>
 </section>
