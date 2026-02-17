@@ -30,8 +30,8 @@ permalink: /learning_capacity/
         <div class="col-md-6">
           <p class="animate-in text-justify">Enhance your skills in energy systems modelling with our user-friendly interface and additional learning materials, enabling comprehensive national-level modelling of the power and transport sectors.</p>
           <ul class="animate-in">
-            <li><strong>Download Interface</strong> – <em>Coming soon</em></li>
-            <li><strong>Teaching Material (Zenodo)</strong> – <em>Coming soon</em></li>
+            <li><strong>Download Interface</strong> – <a href="https://github.com/OSeMOSYS/MUIO/releases/tag/v5.3" target="_blank">MUIO v5.3</a></li>
+            <li><strong>Teaching Material (YouTube)</strong> – <a href="https://www.youtube.com/watch?v=MDSQqm8RMrw" target="_blank">Watch video</a></li>
           </ul>
         </div>
       </div>
