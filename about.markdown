@@ -83,7 +83,7 @@ permalink: /about/
 
     <!-- Model Documentation -->
     <div class="icon-link-item">
-      <a href="https://osemosys.readthedocs.io/en/latest/index.html" target="_blank">
+      <a href="https://muio-modelling-user-interface-for-osemosys.readthedocs.io/en/latest/" target="_blank">
         <img src="/assets/img/Rtdicon.png" width="80" height="80" alt="ReadTheDocs icon" />
         <h3 class="aboutpage-subtitle text-primary">Model Documentation</h3>
       </a>
