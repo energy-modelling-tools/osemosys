@@ -1,37 +1,37 @@
 # Partner institutions for homepage display
 partners:
   - name: afdb
-    logo: /assets/img/partners/afdb.png
+    logo: /assets/img/partners/afdb.svg
     display_name: African Development Bank
     url: https://www.afdb.org/
     
   - name: european-commission
-    logo: /assets/img/partners/european-commission.png
+    logo: /assets/img/partners/european_commission.svg
     display_name: European Commission
     url: https://ec.europa.eu/
     
   - name: iaea
-    logo: /assets/img/partners/iaea.png
+    logo: /assets/img/partners/iaea.svg
     display_name: IAEA
     url: https://www.iaea.org/
     
   - name: irena
-    logo: /assets/img/partners/irena.png
+    logo: /assets/img/partners/irena.svg
     display_name: IRENA
     url: https://www.irena.org/
     
   - name: kth
-    logo: /assets/img/partners/kth.png
+    logo: /assets/img/partners/kth.svg
     display_name: KTH Royal Institute of Technology
     url: https://www.kth.se/en
     
   - name: ncsu
-    logo: /assets/img/partners/ncsu.png
+    logo: /assets/img/partners/ncsu.svg
     display_name: North Carolina State University
     url: https://www.ncsu.edu/
     
   - name: psi
-    logo: /assets/img/partners/psi.png
+    logo: /assets/img/partners/psi.svg
     display_name: Paul Scherrer Institute
     url: https://www.psi.ch/
     
@@ -41,7 +41,7 @@ partners:
     url: https://www.sei.org/
     
   - name: sfu
-    logo: /assets/img/partners/sfu.png
+    logo: /assets/img/partners/sfu.svg
     display_name: Simon Fraser University
     url: https://www.sfu.ca/
     
@@ -66,17 +66,17 @@ partners:
     url: https://www.un.org/development/desa/
     
   - name: unido
-    logo: /assets/img/partners/unido.png
+    logo: /assets/img/partners/unido.svg
     display_name: UNIDO
     url: https://www.unido.org/
     
   - name: worldbank
-    logo: /assets/img/partners/worldbank.png
+    logo: /assets/img/partners/worldbank.svg
     display_name: World Bank Group
     url: https://www.worldbank.org/
     
   - name: wwf
-    logo: /assets/img/partners/wwf.png
+    logo: /assets/img/partners/wwf.svg
     display_name: World Wildlife Fund
     url: https://www.worldwildlife.org/
 
