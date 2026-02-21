@@ -1,54 +1,99 @@
 # Partner institutions for homepage display
-# Only specify which partners to display by name
-# Logo, display_name, and url are automatically loaded from page-template/_data/partners_library.yml
 partners:
   - name: afdb
+    logo: /assets/img/partners/afdb.svg
+    display_name: African Development Bank
+    url: https://www.afdb.org/
     height: 80
     
   - name: european-commission
+    logo: /assets/img/partners/european_commission.svg
+    display_name: European Commission
+    url: https://ec.europa.eu/
     height: 80
     
   - name: iaea
+    logo: /assets/img/partners/iaea.svg
+    display_name: IAEA
     url: https://www.iaea.org/topics/economics/energy-economic-and-environmental-analysis/climate-land-energy-water-strategies
     height: 80
     
   - name: irena
+    logo: /assets/img/partners/irena.svg
+    display_name: IRENA
+    url: https://www.irena.org/
     height: 80
     
   - name: kth
+    logo: /assets/img/partners/kth.svg
+    display_name: KTH Royal Institute of Technology
+    url: https://www.kth.se/en
     height: 80
     
   - name: ncsu
+    logo: /assets/img/partners/ncsu.svg
+    display_name: North Carolina State University
+    url: https://www.ncsu.edu/
     height: 80
     
   - name: psi
+    logo: /assets/img/partners/psi.svg
+    display_name: Paul Scherrer Institute
+    url: https://www.psi.ch/
     height: 80
     
   - name: sei
+    logo: /assets/img/partners/sei.png
+    display_name: Stockholm Environment Institute
+    url: https://www.sei.org/
     height: 80
     
   - name: sfu
+    logo: /assets/img/partners/sfu.svg
+    display_name: Simon Fraser University
+    url: https://www.sfu.ca/
     height: 80
     
   - name: stanford
+    logo: /assets/img/partners/stanford.png
+    display_name: Stanford University
+    url: https://www.stanford.edu/
     height: 80
     
   - name: ucl
+    logo: /assets/img/partners/ucl.png
+    display_name: University College London
+    url: https://www.ucl.ac.uk/
     height: 80
     
   - name: uct
+    logo: /assets/img/partners/uct.png
+    display_name: University of Cape Town
+    url: https://www.uct.ac.za/
     height: 80
     
   - name: undesa
+    logo: https://raw.githubusercontent.com/energy-modelling-tools/energy-modelling-tools.github.io/main/assets/img/partners/undesa.png
+    display_name: UN DESA
+    url: https://un-modelling.github.io/modelling-tools/
     height: 80
     
   - name: unido
+    logo: https://raw.githubusercontent.com/energy-modelling-tools/energy-modelling-tools.github.io/main/assets/img/partners/unido.svg
+    display_name: UNIDO
+    url: https://www.unido.org/
     height: 80
     
   - name: worldbank
+    logo: /assets/img/partners/worldbank.svg
+    display_name: World Bank Group
+    url: https://www.worldbank.org/
     height: 80
     
   - name: wwf
+    logo: /assets/img/partners/wwf.svg
+    display_name: World Wildlife Fund
+    url: https://www.worldwildlife.org/
     height: 80
 
   - name: sfu-see
