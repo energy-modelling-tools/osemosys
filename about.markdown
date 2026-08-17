@@ -9,30 +9,37 @@ permalink: /about/
   <h2 class="alt-h3 mb-4">About OSeMOSYS </h2>
   <div class="container-lg p-responsive py-4 py-md-6 ">
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_about_osemosys -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
         <strong>OSeMOSYS</strong> is a full-fledged systems optimization model for long-run energy planning.
         The initial working code of OSeMOSYS was published in 2008 in a presentation at the International Energy Workshop in Paris at the IEA
         (<a href="https://www.osemosys.org/uploads/1/8/5/0/18504136/osemosys_iea_paris2008.pdf" target="_blank">the date stamped PDF with the original code can be found here</a>).
         Ongoing efforts since then have resulted in a more robust version of the code, which is openly available.
       </p>
+      <!-- /CMS:section -->
     </div>
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">What does it do?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_what_does_it_do -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       OSeMOSYS identifies the most cost-effective approach for capacity expansion and energy generation,
       focusing on minimizing discounted system costs. It meets exogenously defined final energy demands while considering existing technological attributes
       such as costs, lifetimes, and system constraints like greenhouse gas emission limits, renewable energy targets, and investment caps.
       </p>
+      <!-- /CMS:section -->
     </div>
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">What type of energy system can you model?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_what_type_of_energy_system -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       You can model any type of energy system, starting from primary sources (e.g., coal mines), through fuel processing (e.g., refineries, electrolyzers),
       to end-use technologies (e.g., electric vehicles, industrial furnaces). Additionally, you can represent broader systems, such as land use and water,
       to create integrated assessment models.
     </p>
+      <!-- /CMS:section -->
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">Who is the target audience?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_who_is_the_target_audience -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       OSeMOSYS is suitable for everyone working in the energy field, including governmental bodies, industry players, and academia.
       The framework has proven its usefulness across a wide range of applications, from master's theses
@@ -40,16 +47,20 @@ permalink: /about/
       to national decarbonization plans
       (<a href="https://doi.org/10.1016/j.enpol.2020.111089" target="_blank">Godínez-Zamora et al., 2020</a>).
     </p>
+      <!-- /CMS:section -->
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">What outcomes can you obtain?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_what_outcomes_can_you_obtain -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       Key outputs from OSeMOSYS include system costs, installed capacities, energy generation, and emissions.
       Results can be further broken down by type (e.g., investment, operating, penalties), by year, by region, by sector, and by technology,
       depending on the model design.
       </p>
+      <!-- /CMS:section -->
     </div>
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">How can you start with OSeMOSYS?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_how_can_you_start_with -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       Go ahead and download our Modelling User Interface for OSeMOSYS (MUIO).
       MUIO is an all-in-one application that lets you manage data, run models, and visualize results seamlessly.
@@ -58,14 +69,17 @@ permalink: /about/
       To download the interface and learn more, please visit
       <a href="https://osemosys.readthedocs.io/en/latest/MUIO.html" target="_blank">this site</a>.
       </p>
+      <!-- /CMS:section -->
     </div>
     <h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6" id="more-than-just-code">How can you contribute?</h2>
     <div class="col-md-12 animate-out mb-2">
+      <!-- CMS:section id=about_how_can_you_contribute -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
       OSeMOSYS is currently available in three languages: (1) GNUMathprog, (2) Python, and (3) GAMS.
       Versions (1) and (2) can be run fully open-source, from source to solver.
       All code bases are maintained on <a href="https://github.com/OSeMOSYS" target="_blank">GitHub</a>, and contributions from the community are welcome.
       </p>
+      <!-- /CMS:section -->
     </div>
   </div>
 </div>

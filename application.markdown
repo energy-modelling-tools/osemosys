@@ -10,37 +10,45 @@ permalink: /applications/
   </div>
 
   <div class="applications-content text-left">
+    <!-- CMS:section id=application_osemosys_applications -->
     <p class="lead mb-4">OSeMOSYS is a fundamental building block for a wide range of applications across government, industry, and academia. Several examples include:</p>
+    <!-- /CMS:section -->
 
     <div class="applications-grid">
       <div class="application-category">
         <h3 class="category-title">Governments</h3>
+        <!-- CMS:section id=application_governments -->
         <ul class="application-list">
           <li><a href="https://energypedia.info/wiki/LTEM_-_Energy_Department_of_the_Cyprus_Institute">National Energy and Climate Plan in Cyprus</a></li>
           <li><a href="https://www.wri.org/research/costos-y-beneficios-de-la-descarbonizacion-de-la-economia-de-costa-rica-evaluacion-del-plan-nacional-de-descarbonizacion-bajo-incertidumbre.pdf">National Decarbonization Plan in Costa Rica</a></li>
           <li><a href="https://www.afd.fr/es/actualites/ecuador-construye-su-camino-hacia-la-descarbonizacion">National Climate Change Mitigation Plan in Ecuador</a></li>
           <li><a href="https://www.rvo.nl/sites/default/files/2023-06/Report-Final-Draft_Signed-01-1.pdf">Green Hydrogen and Ammonia Roadmap in Lao PDR</a></li>
         </ul>
+        <!-- /CMS:section -->
       </div>
 
       <div class="application-category">
         <h3 class="category-title">Industry and Think Tanks</h3>
+        <!-- CMS:section id=application_industry_and_think_tanks -->
         <ul class="application-list">
           <li><a href="https://www.globalccsinstitute.com/wp-content/uploads/2021/10/genzo1123.pdf">Global CCS Institute</a></li>
           <li><a href="https://www.kapsarc.org/research/projects/kosemosys/">King Abdullah Petroleum Studies and Research Center</a></li>
           <li><a href="https://www.seforall.org/news/driving-to-the-outcomes-with-an-ecosystem-approach">Sustainable Energy for All</a></li>
           <li><a href="https://github.com/transition-zero/tz-osemosys">Transition Zero – TZ-OSeMOSYS</a></li>
         </ul>
+        <!-- /CMS:section -->
       </div>
 
       <div class="application-category">
         <h3 class="category-title">Academia</h3>
+        <!-- CMS:section id=application_academia -->
         <ul class="application-list">
           <li><a href="https://kth.diva-portal.org/smash/get/diva2:1576316/FULLTEXT01.pdf">Politecnico di Milano – Long-term energy planning with highly-detailed demand modelling for Egypt</a></li>
           <li><a href="https://kth.diva-portal.org/smash/get/diva2:1576316/FULLTEXT01.pdf">KTH – Hydrogen and electricity system dynamics in the Nordic region</a></li>
           <li><a href="https://www.lboro.ac.uk/research/steer/research/themes/systems-analysis/">Loughborough University – STEER Centre for Sustainable Transitions</a></li>
           <li><a href="https://spiral.imperial.ac.uk/handle/10044/1/104682">Imperial College London – Energy security modelling in Armenia</a></li>
         </ul>
+        <!-- /CMS:section -->
       </div>
     </div>
   </div>
@@ -58,27 +66,37 @@ permalink: /applications/
       <div class="slider" id="textSlider">
         <div class="slide-card">
           <h3>OSeMOSYS Global</h3>
+          <!-- CMS:section id=application_osemosys_global -->
           <p><a href="https://osemosys-global.readthedocs.io/en/latest/" target="_blank">Open-source global electricity model</a></p>
+          <!-- /CMS:section -->
         </div>
 
         <div class="slide-card">
           <h3>GENESYS-MOD</h3>
+          <!-- CMS:section id=application_genesys_mod -->
           <p><a href="https://git.tu-berlin.de/genesysmod/genesys-mod-public" target="_blank">Modular European decarbonisation model</a></p>
+          <!-- /CMS:section -->
         </div>
 
         <div class="slide-card">
           <h3>TEMBA</h3>
+          <!-- CMS:section id=application_temba -->
           <p><a href="https://zenodo.org/records/3521841" target="_blank">The African electricity model base</a></p>
+          <!-- /CMS:section -->
         </div>
 
         <div class="slide-card">
           <h3>OSeMBE</h3>
+          <!-- CMS:section id=application_osembe -->
           <p><a href="https://github.com/HauHe/OSeMBE" target="_blank">Open Source energy Model – Base for Europe</a></p>
+          <!-- /CMS:section -->
         </div>
 
         <div class="slide-card">
           <h3>SAMBA</h3>
+          <!-- CMS:section id=application_samba -->
           <p><a href="http://www.osemosys.org/samba.html" target="_blank">Southern African Model Base for Analysis</a></p>
+          <!-- /CMS:section -->
         </div>
       </div>
     </div>
@@ -92,7 +110,9 @@ permalink: /applications/
 <section class="container-lg p-responsive py-4 py-md-6 my-lg-6">
   <div class="recommended-reading">
     <h2 class="alt-h2 text-center mb-4">Recommended Reading</h2>
+    <!-- CMS:section id=application_recommended_reading -->
     <p class="text-center mb-5">For a broader analysis of applications and advancements in OSeMOSYS, see the following peer-reviewed publications:</p>
+    <!-- /CMS:section -->
 
     <div class="publications-list">
       {% for publication in site.data.publications %}
