@@ -62,12 +62,7 @@ permalink: /about/
     <div class="col-md-12 animate-out mb-2">
       <!-- CMS:section id=about_how_can_you_start_with -->
       <p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
-      Go ahead and download our Modelling User Interface for OSeMOSYS (MUIO).
-      MUIO is an all-in-one application that lets you manage data, run models, and visualize results seamlessly.
-      For training on how to use both the model and the interface, you can take our free, certified course at the Open University
-      <a href="https://www.open.edu/openlearncreate/course/view.php?id=6824" target="_blank">here</a>.
-      To download the interface and learn more, please visit
-      <a href="https://osemosys.readthedocs.io/en/latest/MUIO.html" target="_blank">this site</a>.
+        Go ahead and download our Modelling User Interface for OSeMOSYS (MUIO). MUIO is an all-in-one application that lets you manage data, run models, and visualize results seamlessly. For training on how to use both the model and the interface, you can take our free, certified course at the Open University <a href="https://www.open.edu/openlearncreate/course/view.php?id=17737" target="_blank">here</a>. To download the interface and learn more, please visit <a href="https://muio-modelling-user-interface-for-osemosys.readthedocs.io/en/latest/" target="_blank">this site</a>.
       </p>
       <!-- /CMS:section -->
     </div>
