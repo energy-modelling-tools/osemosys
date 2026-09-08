@@ -19,36 +19,35 @@ permalink: /applications/
         <h3 class="category-title">Governments</h3>
         <!-- CMS:section id=application_governments -->
         <ul class="application-list">
-          <li><a href="https://energypedia.info/wiki/LTEM_-_Energy_Department_of_the_Cyprus_Institute">National Energy and Climate Plan in Cyprus</a></li>
-          <li><a href="https://www.wri.org/research/costos-y-beneficios-de-la-descarbonizacion-de-la-economia-de-costa-rica-evaluacion-del-plan-nacional-de-descarbonizacion-bajo-incertidumbre.pdf">National Decarbonization Plan in Costa Rica</a></li>
-          <li><a href="https://www.afd.fr/es/actualites/ecuador-construye-su-camino-hacia-la-descarbonizacion">National Climate Change Mitigation Plan in Ecuador</a></li>
-          <li><a href="https://www.rvo.nl/sites/default/files/2023-06/Report-Final-Draft_Signed-01-1.pdf">Green Hydrogen and Ammonia Roadmap in Lao PDR</a></li>
+          <li><a href="https://cdn.climatepolicyradar.org/navigator/CYP/2024/cyprus-updated-final-national-energy-and-climate-plan-necp-2021-2030_ed6636c45211f9fea8966557f855871c.pdf" target="_blank">National Energy and Climate Plan in Cyprus</a></li>
+          <li><a href="https://cambioclimatico.minae.go.cr/plan-nacional-de-descarbonizacion/" target="_blank">National Decarbonization Plan in Costa Rica</a></li>
+          <li><a href="https://planmicc.ambiente.gob.ec/" target="_blank">National Climate Change Mitigation Plan in Ecuador</a></li>
+          <li><a href="https://climatecompatiblegrowth.com/ccg-supports-pioneering-roadmap-in-lao-pdr/" target="_blank">Green Hydrogen and Ammonia Roadmap in Lao PDR</a></li>
         </ul>
-        <!-- /CMS:section -->
+      <!-- /CMS:section -->
       </div>
 
       <div class="application-category">
         <h3 class="category-title">Industry and Think Tanks</h3>
         <!-- CMS:section id=application_industry_and_think_tanks -->
         <ul class="application-list">
-          <li><a href="https://www.globalccsinstitute.com/wp-content/uploads/2021/10/genzo1123.pdf">Global CCS Institute</a></li>
-          <li><a href="https://www.kapsarc.org/research/projects/kosemosys/">King Abdullah Petroleum Studies and Research Center</a></li>
-          <li><a href="https://www.seforall.org/news/driving-to-the-outcomes-with-an-ecosystem-approach">Sustainable Energy for All</a></li>
-          <li><a href="https://github.com/transition-zero/tz-osemosys">Transition Zero – TZ-OSeMOSYS</a></li>
+          <li><a href="https://www.ogci.com/wp-content/uploads/2026/08/260811_CCS_APAC_report.pdf" target="_blank">Global CCS Institute</a></li>
+          <li><a href="https://apps.kapsarc.org/appboard/kosemosys" target="_blank">King Abdullah Petroleum Studies and Research Center</a></li>
+          <li><a href="https://github.com/transition-zero/tz-osemosys" target="_blank">Transition Zero – TZ-OSeMOSYS</a></li>
         </ul>
-        <!-- /CMS:section -->
+      <!-- /CMS:section -->
       </div>
 
       <div class="application-category">
         <h3 class="category-title">Academia</h3>
         <!-- CMS:section id=application_academia -->
         <ul class="application-list">
-          <li><a href="https://kth.diva-portal.org/smash/get/diva2:1576316/FULLTEXT01.pdf">Politecnico di Milano – Long-term energy planning with highly-detailed demand modelling for Egypt</a></li>
-          <li><a href="https://kth.diva-portal.org/smash/get/diva2:1576316/FULLTEXT01.pdf">KTH – Hydrogen and electricity system dynamics in the Nordic region</a></li>
-          <li><a href="https://www.lboro.ac.uk/research/steer/research/themes/systems-analysis/">Loughborough University – STEER Centre for Sustainable Transitions</a></li>
-          <li><a href="https://spiral.imperial.ac.uk/handle/10044/1/104682">Imperial College London – Energy security modelling in Armenia</a></li>
+          <li><a href="https://www.politesi.polimi.it/handle/10589/208303" target="_blank">Politecnico di Milano – Long-term energy planning with highly-detailed demand modelling for Egypt</a></li>
+          <li><a href="https://www.energy.kth.se/education/master/msc-thesis-proposals/10-msc-thesis-positions-in-energy-systems-modelling-with-osembe-1.1442476" target="_blank">KTH – Energy Systems Modelling with OSeMBE</a></li>
+          <li><a href="https://www.lboro.ac.uk/research/steer/research-and-collaborations/systems-analysis-and-energy-modelling/" target="_blank">Loughborough University – STEER Centre for Sustainable Transitions</a></li>
+          <li><a href="https://spiral.imperial.ac.uk/entities/publication/dfc13093-66fa-4464-a7ba-b2996aad8210" target="_blank">Imperial College London – Energy security modelling in Armenia</a></li>
         </ul>
-        <!-- /CMS:section -->
+      <!-- /CMS:section -->
       </div>
     </div>
   </div>
