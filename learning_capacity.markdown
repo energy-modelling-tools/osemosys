@@ -114,7 +114,7 @@ Enhance your skills in energy systems modelling with our new interface and addit
           </ul>
       </div>
     </div>
-
+  </div> 
   </div>
 </section>
 
