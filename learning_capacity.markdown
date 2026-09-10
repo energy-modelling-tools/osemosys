@@ -112,7 +112,6 @@ Enhance your skills in energy systems modelling with our new interface and addit
             <li class="animate-in">{{ adjacent.flag }} <a href="{{ adjacent.url }}" target="_blank">{{ adjacent.title }}</a></li>
             {% endfor %}
           </ul>
-        </>
       </div>
     </div>
 
