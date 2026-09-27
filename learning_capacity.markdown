@@ -25,15 +25,34 @@ permalink: /learning_capacity/
       </p>
     </div>
 
+    <div class="mt-3 animate-in">
+      <h3 class="alt-h3 mt-3 animate-in">📦 Starter Data Kits</h3>
+      <!-- CMS:section id=learning_capacity_starter_data_kits -->
+      <p class="animate-in">Take your skills to the next level by modelling a zero-order representation of your country using specially designed national data packages adapted for OSeMOSYS.</p>
+      <!-- /CMS:section -->
+    </div>
+
+    <div class="mt-3 animate-in">
+      <h3 class="alt-h3 mt-3 animate-in">📊 Modelling User Interface for OSeMOSYS (MUIO)</h3>
+      <!-- CMS:section id=learning_capacity_muio_interface -->
+      <p class="animate-in text-justify">Enhance your skills in energy systems modelling with our new interface and additional learning materials, enabling comprehensive national-level modelling of the energy sector.</p>
+      <!-- /CMS:section -->
+      <!-- CMS:section id=learning_capacity_muio_interface_2 -->
+      <ul class="animate-in">
+        <li><strong>Download Interface</strong> – <a href="https://github.com/OSeMOSYS/MUIO/releases" target="_blank">MUIO</a></li>
+        <li><strong>Teaching Material (YouTube)</strong> – <a href="https://www.youtube.com/watch?v=MDSQqm8RMrw" target="_blank">Watch video</a></li>
+      </ul>
+      <!-- /CMS:section -->
+    </div>
 
     <div class="mt-3 animate-in">
       <h3 class="alt-h3 mt-1 animate-in">🎓 Energy Modelling Community (YouTube Playlist)</h3>
       <div class="row align-items-center text-left mb-4 animate-in">
         <div class="col-md-6">
-          <!-- CMS: id=learning_capacity_energy_modelling_community_youtube_playlist -->
+          <!-- CMS:section id=learning_capacity_energy_modelling_community_youtube_playlist -->
           <p class="animate-in">Explore insights and community discussions from the Energy Modelling Platform and Climate Compatible Growth events.</p>
-          <!-- /CMS: -->
-          <p class="animate-in"><a href="https://climatecompatiblegrowth.com/energy-modelling-platform/" target="_blank" class="btn btn-outline-primary sky-blue-accent d-block d-sm-inline-block px-1 px-md-3">Watch on YouTube →</a></p>
+          <!-- /CMS:section -->
+          <p class="animate-in"><a href="https://www.youtube.com/watch?v=of8JpyEd8_Y&list=PLhLN8V8JSUnJgt4SIE7gnXXncVEaXh0Ir" target="_blank" class="btn btn-outline-primary sky-blue-accent d-block d-sm-inline-block px-1 px-md-3">Watch on YouTube →</a></p>
         </div>
       </div>
     </div>
@@ -44,11 +63,11 @@ permalink: /learning_capacity/
           <strong>🌍 Energy Modelling Platforms (EMPs)</strong>
         </a>
       </h3>
-      <!-- CMS: id=learning_capacity_energy_modelling_platforms_emps -->
+      <!-- CMS:section id=learning_capacity_energy_modelling_platforms_emps -->
       <p class="animate-in">By offering training to professionals from the Global South, the Energy Modelling Platforms (EMPs) enable these countries to gather critical data, perform independent analyses, and develop credible investment proposals for clean energy infrastructure projects. EMPs play a vital role in what we refer to as local capacity building.</p>
-      <!-- /CMS: -->
+      <!-- /CMS:section -->
       <p class="animate-in">
-        <a href="https://curriculum.climatecompatiblegrowth.com/courses/963fc47f-0495-47af-954c-71edecd2a0a9" class="btn btn-outline-light">Learn more →</a>
+        <a href="https://climatecompatiblegrowth.com/energy-modelling-platform/" class="btn btn-outline-light">Learn more →</a>
       </p>
     </div>
 
@@ -58,9 +77,9 @@ permalink: /learning_capacity/
           <strong>🛠️ Flatpack Program</strong>
         </a>
       </h3>
-      <!-- CMS: id=learning_capacity_flatpack_program -->
+      <!-- CMS:section id=learning_capacity_flatpack_program -->
       <p class="animate-in text-justify">OSeMOSYS Teaching Kit provides learning materials for an introductory course on using the OSeMOSYS tool to comprehensively study the topic of energy systems analysis by combining academic and practical aspects. It includes editable lecture slides, hands-on exercises, sample learning objectives, and a suggested course timetable.</p>
-      <!-- /CMS: -->
+      <!-- /CMS:section -->
       <p class="animate-in">
         <a href="https://curriculum.climatecompatiblegrowth.com/courses/963fc47f-0495-47af-954c-71edecd2a0a9" target="_blank" class="btn btn-outline-primary sky-blue-accent d-block d-sm-inline-block px-1 px-md-3">Open Teaching Kit →</a>
       </p>
@@ -94,27 +113,18 @@ permalink: /learning_capacity/
       <div class="clearfix gutter-spacious">
         <div class="col-md-12 animate-in mb-4">
           <h3 class="alt-h3 mb-3">EMP-Adjacent Events</h3>
-          <!-- CMS: id=learning_capacity_emp_adjacent_events -->
+          <!-- CMS:section id=learning_capacity_emp_adjacent_events -->
           <p class="text-gray">These capacity building events used the OSeMOSYS methodology outside the formal EMP series:</p>
-          <!-- /CMS: -->
-<h2 class="aboutpage-subtitle text-left mb-3 mt-lg-6">📊 Modelling User Interface for OSeMOSYS (MUIO)</h2>
-<div class="col-md-12 animate-out mb-2">
-<!-- CMS: id=learning_capacity_muio_interface -->
-<p class="alt-lead text-gray text-justify-between col-md-15 mx-auto">
-Enhance your skills in energy systems modelling with our new interface and additional learning materials, enabling comprehensive national-level modelling of the energy sector.<br>
-        - <strong>Download Interface</strong> – <a href="https://github.com/OSeMOSYS/MUIO/releases" target="_blank">MUIO</a><br>
-        - <strong>Teaching Material (YouTube)</strong> – <a href="https://www.youtube.com/watch?v=MDSQqm8RMrw" target="_blank">Watch video</a>
-</p>
-<!-- /CMS: -->
-</div>
+          <!-- /CMS:section -->
           <ul>
             {% for adjacent in site.data.learning_events.adjacent_events %}
             <li class="animate-in">{{ adjacent.flag }} <a href="{{ adjacent.url }}" target="_blank">{{ adjacent.title }}</a></li>
             {% endfor %}
           </ul>
+        </div>
       </div>
     </div>
-  </div> 
+
   </div>
 </section>
 
