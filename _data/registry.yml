@@ -1,0 +1,23 @@
+# Backs the OSeMOSYS Project Registry table in the Project Registry section of
+# get_involved.markdown (published at /osemosys/contact/#project-registry).
+#
+# A maintainer copies each accepted "Register an OSeMOSYS Project" issue into a
+# block below, then commits — GitHub Pages rebuilds the page automatically.
+# Field names must match what get_involved.markdown reads.
+#
+# The list is empty until the first project is accepted; the page shows an
+# invitation to register instead of an empty table.
+
+# --- Template for a new entry (copy, uncomment, fill in) ---
+# - project_name: ""
+#   institutions: ""
+#   country_region: ""
+#   scope: ""            # Power sector only | Whole energy system | CLEWs nexus | Other
+#   status: ""           # Active | Completed | Planned
+#   start_date: ""       # YYYY or YYYY-MM
+#   contact_name: ""
+#   contact_email: ""
+#   linked_outputs: ""   # optional — shown as a link on the project name
+#   funders: ""          # optional
+#   tags: []             # optional
+#   last_confirmed: ""   # set by the maintainer at merge or reconfirmation time

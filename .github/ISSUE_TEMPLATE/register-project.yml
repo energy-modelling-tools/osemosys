@@ -1,0 +1,148 @@
+name: "Register an OSeMOSYS Project"
+description: "Add your OSeMOSYS-based project to the registry so other institutions can find and connect with you."
+title: "[New entry] "
+labels: ["registry-entry", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Before you submit
+
+        This registry exists to promote collaboration across institutions and support the ongoing development of OSeMOSYS — helping teams working on similar problems find each other instead of duplicating work.
+
+        This form adds your project to the **public** OSeMOSYS Project Registry on the Get Involved page. Everything you enter below — including the contact name and email — will be visible on GitHub and on that page to anyone on the internet.
+
+        Please read the [privacy notice](https://energy-modelling-tools.github.io/osemosys/contact/#registry-privacy) before continuing. In short: we ask only for the minimum needed to make the registry useful (no personal data beyond a name and a work email), we do not use it for anything except this directory unless you separately opt in below, and you or the listed contact can ask for a correction or removal at any time by opening an issue labelled `privacy-request`.
+
+        You can see the [current registry entries](https://energy-modelling-tools.github.io/osemosys/contact/#project-registry) on the same page.
+
+        Takes about 5 minutes. One entry per project — submit a new form if you are adding a second project.
+
+  - type: input
+    id: project-name
+    attributes:
+      label: Project name
+      description: Short title of the modelling effort.
+      placeholder: "e.g., National Energy Plan 2050"
+    validations:
+      required: true
+
+  - type: input
+    id: institutions
+    attributes:
+      label: Institution(s)
+      description: Lead institution and any partners.
+      placeholder: "e.g., KTH dESA; Ministry of Energy"
+    validations:
+      required: true
+
+  - type: input
+    id: country-region
+    attributes:
+      label: Country / region
+      description: Geographic scope covered by the model.
+      placeholder: "e.g., Kenya; East Africa"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: scope
+    attributes:
+      label: Scope
+      description: Sector coverage of the model. Choose the closest fit — add detail in Tags below if needed.
+      options:
+        - Power sector only
+        - Whole energy system
+        - CLEWs nexus (Climate-Land-Energy-Water)
+        - Other (describe in Tags)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      options:
+        - Active
+        - Completed
+        - Planned
+    validations:
+      required: true
+
+  - type: input
+    id: start-date
+    attributes:
+      label: Start date
+      description: When the project began (year, or year-month).
+      placeholder: "e.g., 2024-03"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-name
+    attributes:
+      label: Contact name
+      description: The person other researchers should reach out to about this project.
+      placeholder: "e.g., Jane Doe"
+    validations:
+      required: true
+
+  - type: input
+    id: contact-email
+    attributes:
+      label: Contact email
+      description: A work email is preferred over a personal one.
+      placeholder: "e.g., jane@inst.edu"
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contact-consent
+    attributes:
+      label: Consent to publish the contact's details
+      options:
+        - label: "I confirm that the person named above has agreed to have their name and email published in this public registry."
+          required: true
+
+  - type: input
+    id: linked-outputs
+    attributes:
+      label: Linked outputs (optional)
+      description: GitHub repo, publications, or datasets.
+      placeholder: "e.g., github.com/org/repo"
+    validations:
+      required: false
+
+  - type: input
+    id: funders
+    attributes:
+      label: Funder(s) (optional)
+      description: Funding source, if applicable and shareable.
+      placeholder: "e.g., World Bank ESMAP"
+    validations:
+      required: false
+
+  - type: input
+    id: tags
+    attributes:
+      label: Tags (optional)
+      description: Comma-separated topic tags to help others find you (used for matchmaking).
+      placeholder: "e.g., hydrogen, mini-grids"
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: newsletter-optin
+    attributes:
+      label: Newsletter (separate from the registry listing)
+      options:
+        - label: "Also add this contact to the quarterly digest / newsletter mailing list. (Optional — leaving this unchecked still lists your project in the registry.)"
+          required: false
+
+  - type: checkboxes
+    id: privacy-ack
+    attributes:
+      label: Privacy acknowledgement
+      options:
+        - label: "I have read the privacy notice on the Get Involved page and understand this entry will be public, and can be corrected, updated, or removed at any time by opening an issue labelled privacy-request."
+          required: true

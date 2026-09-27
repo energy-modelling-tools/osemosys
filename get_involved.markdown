@@ -105,6 +105,95 @@ permalink: /contact/
       </div>
     </div>
 
+    <!-- Section 3: Project Registry -->
+    <div class="involvement-section mt-5" id="project-registry">
+      <h3 class="section-title text-center mb-4">📋 OSeMOSYS Project Registry</h3>
+
+      <!-- CMS:section id=get_involved_osemosys_project_registry -->
+      <p class="text-center lead mb-4">
+        See who is running OSeMOSYS-based projects, where, and on what—and register your own. The registry exists to promote collaboration across institutions and to support the ongoing development of OSeMOSYS, by making it easy for teams working on similar problems to find each other instead of duplicating work that has already been done elsewhere.
+      </p>
+      <!-- /CMS:section -->
+
+      <div class="text-center mb-4">
+        <a href="https://github.com/energy-modelling-tools/osemosys/issues/new?template=register-project.yml" target="_blank" class="btn btn-primary">Register your project</a>
+        <p class="text-muted registry-note mt-2">
+          Takes about 5 minutes · opens a short form on GitHub · please read the <a href="#registry-privacy">privacy notice</a> below first
+        </p>
+      </div>
+
+      {% if site.data.registry and site.data.registry.size > 0 %}
+      <div class="table-responsive">
+        <table class="registry-table">
+          <thead>
+            <tr>
+              <th>Project</th>
+              <th>Institution(s)</th>
+              <th>Country / Region</th>
+              <th>Scope</th>
+              <th>Status</th>
+              <th>Tags</th>
+              <th>Contact</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for entry in site.data.registry %}
+            <tr>
+              <td>
+                {% if entry.linked_outputs %}
+                <a href="{% if entry.linked_outputs contains '://' %}{{ entry.linked_outputs }}{% else %}https://{{ entry.linked_outputs }}{% endif %}" target="_blank">{{ entry.project_name }}</a>
+                {% else %}
+                {{ entry.project_name }}
+                {% endif %}
+              </td>
+              <td>{{ entry.institutions }}</td>
+              <td>{{ entry.country_region }}</td>
+              <td>{{ entry.scope }}</td>
+              <td><span class="status-badge status-{{ entry.status | downcase | replace: ' ', '-' }}">{{ entry.status }}</span></td>
+              <td>{% for tag in entry.tags %}<span class="tag-pill">{{ tag }}</span>{% endfor %}</td>
+              <td>{% if entry.contact_email %}<a href="mailto:{{ entry.contact_email }}">{{ entry.contact_name }}</a>{% else %}{{ entry.contact_name }}{% endif %}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <p class="text-muted registry-note mt-3">
+        Something out of date, or an entry you want corrected or removed? See <a href="#registry-privacy">how to ask</a> below.
+      </p>
+      {% else %}
+      <p class="text-center text-gray">No projects listed yet—yours can be the first.</p>
+      {% endif %}
+
+      <div class="registry-privacy mt-5" id="registry-privacy">
+        <h4 class="registry-privacy-title">Privacy notice</h4>
+        <p class="text-muted registry-note">
+          This registry is a public, community-maintained directory of OSeMOSYS energy-modelling projects. This notice covers the personal data that supports it—a contact name and email. The project-level information is not personal data. It does not replace your own institution's data protection policies.
+        </p>
+
+        <h5>What is collected, and why</h5>
+        <p>Each entry carries a <strong>contact name and email address</strong>, alongside project information (institution, country or region, scope, status, dates, tags, funders, and linked outputs). The contact details let other researchers and institutions reach out about a listed project, which is the entire purpose of the registry. No phone numbers, personal addresses, or other personal identifiers are requested.</p>
+
+        <h5>Who can see it</h5>
+        <p>Everything submitted through the form is published <strong>publicly</strong>—in the site's GitHub repository and on this page—and is visible to anyone, including people outside the OSeMOSYS community.</p>
+
+        <h5>Newsletter</h5>
+        <p>Registering does not add anyone to the quarterly digest or any mailing list. That takes a separate opt-in on the submission form.</p>
+
+        <h5>How long it is kept</h5>
+        <p>Entries are reviewed roughly once a year. An entry that goes two review cycles without being reconfirmed is archived, and the contact name and email are removed at that point. You do not have to wait for that cycle.</p>
+
+        <h5>Your rights</h5>
+        <p>If you are the contact listed on an entry—or you listed someone else and they have changed their mind—you can at any time have the entry <strong>corrected</strong>, have the entry or just the contact details <strong>removed</strong>, or <strong>ask what is stored</strong> about you.</p>
+        <p>To do any of these, <a href="https://github.com/energy-modelling-tools/osemosys/issues/new?labels=privacy-request&amp;title=Privacy%20request%20(registry)" target="_blank">open an issue labelled <code>privacy-request</code></a> in the site repository. Requests are handled by the registry maintainers, who aim to action them within five business days.</p>
+
+        <h5>Where it is hosted</h5>
+        <p>Entries live in the site's GitHub repository. GitHub, Inc. is based in the United States, so for anyone in the EU or UK this means the data is transferred outside the EU and UK; GitHub's own data protection terms and Standard Contractual Clauses are intended to cover that transfer. Ask through the repository if you would like more detail.</p>
+
+        <h5>Registering on someone else's behalf</h5>
+        <p>If you are listing a colleague rather than yourself as the contact, make sure they know their name and email will be published publicly before you submit. The form asks you to confirm this.</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -259,6 +348,78 @@ permalink: /contact/
 
 .contribution-steps a:hover {
   text-decoration: underline;
+}
+
+/* Project Registry */
+.registry-note {
+  font-size: 0.85rem;
+}
+
+.table-responsive {
+  overflow-x: auto;
+}
+
+.registry-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.registry-table th,
+.registry-table td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid #e1e4e8;
+  text-align: left;
+  vertical-align: top;
+}
+
+.registry-table th {
+  background: #f6f8fa;
+  color: #24292e;
+  font-weight: 600;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.status-active { background: #dafbe1; color: #1a7f37; }
+.status-completed { background: #eaeef2; color: #57606a; }
+.status-planned { background: #ddf4ff; color: #0969da; }
+
+.tag-pill {
+  display: inline-block;
+  background: #f1f8ff;
+  color: #0366d6;
+  border-radius: 999px;
+  padding: 0.1rem 0.5rem;
+  font-size: 0.75rem;
+  margin: 0 0.2rem 0.2rem 0;
+}
+
+.registry-privacy {
+  border-top: 1px solid #e1e4e8;
+  padding-top: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.registry-privacy-title {
+  color: #0366d6;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.registry-privacy h5 {
+  color: #24292e;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.35rem;
 }
 
 .btn-primary {
