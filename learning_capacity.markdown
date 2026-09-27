@@ -26,13 +26,6 @@ permalink: /learning_capacity/
     </div>
 
     <div class="mt-3 animate-in">
-      <h3 class="alt-h3 mt-3 animate-in">📦 Starter Data Kits</h3>
-      <!-- CMS:section id=learning_capacity_starter_data_kits -->
-      <p class="animate-in">Take your skills to the next level by modelling a zero-order representation of your country using specially designed national data packages adapted for OSeMOSYS.</p>
-      <!-- /CMS:section -->
-    </div>
-
-    <div class="mt-3 animate-in">
       <h3 class="alt-h3 mt-3 animate-in">📊 Modelling User Interface for OSeMOSYS (MUIO)</h3>
       <!-- CMS:section id=learning_capacity_muio_interface -->
       <p class="animate-in text-justify">Enhance your skills in energy systems modelling with our new interface and additional learning materials, enabling comprehensive national-level modelling of the energy sector.</p>
