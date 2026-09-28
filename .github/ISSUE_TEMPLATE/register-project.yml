@@ -1,5 +1,5 @@
 name: "Register an OSeMOSYS Project"
-description: "Add your OSeMOSYS-based project to the registry so other institutions can find and connect with you."
+description: "Add your OSeMOSYS-based project to the global registry so other institutions can find and connect with you."
 title: "[New entry] "
 labels: ["registry-entry", "needs-review"]
 body:
@@ -10,13 +10,11 @@ body:
 
         This registry exists to promote collaboration across institutions and support the ongoing development of OSeMOSYS — helping teams working on similar problems find each other instead of duplicating work.
 
-        This form adds your project to the **public** OSeMOSYS Project Registry on the Get Involved page. Everything you enter below — including the contact name and email — will be visible on GitHub and on that page to anyone on the internet.
+        This form adds your project to the **public** OSeMOSYS Project Registry. Everything you enter below — including the contact name and email — will be visible on GitHub and on the Get Involved page to anyone on the internet.
 
-        Please read the [privacy notice](https://energy-modelling-tools.github.io/osemosys/contact/#registry-privacy) before continuing. In short: we ask only for the minimum needed to make the registry useful (no personal data beyond a name and a work email), we do not use it for anything except this directory unless you separately opt in below, and you or the listed contact can ask for a correction or removal at any time by opening an issue labelled `privacy-request`.
+        Please read the [Privacy Notice](https://energy-modelling-tools.github.io/osemosys/contact/#registry-privacy) before continuing. In short: we only ask for the minimum needed to make the registry useful (no personal data beyond a name and a work email), we don't use it for anything except this directory unless you separately opt in below, and you or the listed contact can request a correction or removal at any time by opening an issue tagged `privacy-request` or emailing the registry curator.
 
-        You can see the [current registry entries](https://energy-modelling-tools.github.io/osemosys/contact/#project-registry) on the same page.
-
-        Takes about 5 minutes. One entry per project — submit a new form if you are adding a second project.
+        Takes about 5 minutes. One entry per project — submit a new form if you're adding a second project.
 
   - type: input
     id: project-name
@@ -144,5 +142,5 @@ body:
     attributes:
       label: Privacy acknowledgement
       options:
-        - label: "I have read the privacy notice on the Get Involved page and understand this entry will be public, and can be corrected, updated, or removed at any time by opening an issue labelled privacy-request."
+        - label: "I have read the Privacy Notice and understand this entry will be public, and can be corrected, updated, or removed at any time by contacting the registry curator."
           required: true

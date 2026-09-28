@@ -107,20 +107,29 @@ permalink: /contact/
 
     <!-- Section 3: Project Registry -->
     <div class="involvement-section mt-5" id="project-registry">
-      <h3 class="section-title text-center mb-4">📋 OSeMOSYS Project Registry</h3>
+      <h3 class="section-title text-center mb-4">OSeMOSYS Project Registry</h3>
 
-      <!-- CMS:section id=get_involved_osemosys_project_registry -->
-      <p class="text-center lead mb-4">
-        See who is running OSeMOSYS-based projects, where, and on what—and register your own. The registry exists to promote collaboration across institutions and to support the ongoing development of OSeMOSYS, by making it easy for teams working on similar problems to find each other instead of duplicating work that has already been done elsewhere.
-      </p>
-      <!-- /CMS:section -->
+      <div class="text-center mb-5">
+        <!-- CMS:section id=registry_intro -->
+        <p class="lead">
+          See who is running OSeMOSYS-based projects, where, and on what — and register your own.
+          This registry exists to promote collaboration across institutions and support the ongoing
+          development of OSeMOSYS, by making it easy for teams working on similar problems to find
+          each other instead of duplicating work.
+        </p>
+        <!-- /CMS:section -->
 
-      <div class="text-center mb-4">
-        <a href="https://github.com/energy-modelling-tools/osemosys/issues/new?template=register-project.yml" target="_blank" class="btn btn-primary">Register your project</a>
-        <p class="text-muted registry-note mt-2">
-          Takes about 5 minutes · opens a short form on GitHub · please read the <a href="#registry-privacy">privacy notice</a> below first
+        <a href="https://github.com/energy-modelling-tools/osemosys/issues/new?template=register-project.yml"
+           target="_blank" class="btn btn-primary btn-large mt-3">
+          Register your project
+        </a>
+        <p class="text-muted mt-2" style="font-size: 0.85rem;">
+          Takes about 5 minutes · opens a short form on GitHub · read the
+          <a href="#registry-privacy">Privacy Notice</a> first
         </p>
       </div>
+
+      <h4 class="text-center mb-4">📋 Current registry entries</h4>
 
       {% if site.data.registry and site.data.registry.size > 0 %}
       <div class="table-responsive">
@@ -149,48 +158,67 @@ permalink: /contact/
               <td>{{ entry.institutions }}</td>
               <td>{{ entry.country_region }}</td>
               <td>{{ entry.scope }}</td>
-              <td><span class="status-badge status-{{ entry.status | downcase | replace: ' ', '-' }}">{{ entry.status }}</span></td>
-              <td>{% for tag in entry.tags %}<span class="tag-pill">{{ tag }}</span>{% endfor %}</td>
+              <td><span class="status-badge status-{{ entry.status | downcase }}">{{ entry.status }}</span></td>
+              <td>
+                {% for tag in entry.tags %}<span class="tag-pill">{{ tag }}</span>{% endfor %}
+              </td>
               <td>{% if entry.contact_email %}<a href="mailto:{{ entry.contact_email }}">{{ entry.contact_name }}</a>{% else %}{{ entry.contact_name }}{% endif %}</td>
             </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
-      <p class="text-muted registry-note mt-3">
-        Something out of date, or an entry you want corrected or removed? See <a href="#registry-privacy">how to ask</a> below.
+      <p class="text-muted mt-3" style="font-size: 0.8rem;">
+        Something out of date, or want an entry corrected or removed? See the
+        <a href="#registry-privacy">Privacy Notice</a> for how.
       </p>
       {% else %}
-      <p class="text-center text-gray">No projects listed yet—yours can be the first.</p>
+      <p class="text-center text-muted">No entries yet — be the first to register your project above.</p>
       {% endif %}
 
       <div class="registry-privacy mt-5" id="registry-privacy">
-        <h4 class="registry-privacy-title">Privacy notice</h4>
-        <p class="text-muted registry-note">
-          This registry is a public, community-maintained directory of OSeMOSYS energy-modelling projects. This notice covers the personal data that supports it—a contact name and email. The project-level information is not personal data. It does not replace your own institution's data protection policies.
-        </p>
+        <h4 class="registry-privacy-title mb-4">Privacy Notice — OSeMOSYS Project Registry</h4>
 
-        <h5>What is collected, and why</h5>
-        <p>Each entry carries a <strong>contact name and email address</strong>, alongside project information (institution, country or region, scope, status, dates, tags, funders, and linked outputs). The contact details let other researchers and institutions reach out about a listed project, which is the entire purpose of the registry. No phone numbers, personal addresses, or other personal identifiers are requested.</p>
+        <p>This registry is a public, community-maintained directory of OSeMOSYS energy-modelling projects. This notice explains what personal data it collects and how it's handled.</p>
 
-        <h5>Who can see it</h5>
-        <p>Everything submitted through the form is published <strong>publicly</strong>—in the site's GitHub repository and on this page—and is visible to anyone, including people outside the OSeMOSYS community.</p>
+        <h5 class="mt-4">Purpose of this registry</h5>
+        <p>The registry exists to make it possible to see, at any time, who is running OSeMOSYS-based projects and where — so that institutions working on similar problems can find each other, share experience, and avoid duplicating work that's already been done elsewhere. In doing so, it aims to promote collaboration across institutions and to support the ongoing development of OSeMOSYS itself, by giving the community and its funders a clearer, collective picture of how the tool is actually being used. This notice is about the personal data (contact name and email) that supports that purpose — not about the project-level data, which isn't personal data.</p>
 
-        <h5>Newsletter</h5>
-        <p>Registering does not add anyone to the quarterly digest or any mailing list. That takes a separate opt-in on the submission form.</p>
+        <h5 class="mt-4">What we collect</h5>
+        <p>For each registry entry, we collect a <strong>contact name and email address</strong>, plus project-level information (institution, country/region, scope, status, dates, tags, funders, and linked outputs) that is not personal data. We do not ask for phone numbers, personal addresses, or any other personal identifiers.</p>
 
-        <h5>How long it is kept</h5>
-        <p>Entries are reviewed roughly once a year. An entry that goes two review cycles without being reconfirmed is archived, and the contact name and email are removed at that point. You do not have to wait for that cycle.</p>
+        <h5 class="mt-4">Why we collect it</h5>
+        <p>The contact name and email let other researchers and institutions reach out about a listed project — that's the entire purpose of the registry. We do not use this contact information for anything else unless you separately opt in (see "Newsletter" below).</p>
 
-        <h5>Your rights</h5>
-        <p>If you are the contact listed on an entry—or you listed someone else and they have changed their mind—you can at any time have the entry <strong>corrected</strong>, have the entry or just the contact details <strong>removed</strong>, or <strong>ask what is stored</strong> about you.</p>
-        <p>To do any of these, <a href="https://github.com/energy-modelling-tools/osemosys/issues/new?labels=privacy-request&amp;title=Privacy%20request%20(registry)" target="_blank">open an issue labelled <code>privacy-request</code></a> in the site repository. Requests are handled by the registry maintainers, who aim to action them within five business days.</p>
+        <h5 class="mt-4">Who can see it</h5>
+        <p>Everything submitted through the registration form is published <strong>publicly</strong> — in this GitHub repository and on this page — visible to anyone, including outside the OSeMOSYS community.</p>
 
-        <h5>Where it is hosted</h5>
-        <p>Entries live in the site's GitHub repository. GitHub, Inc. is based in the United States, so for anyone in the EU or UK this means the data is transferred outside the EU and UK; GitHub's own data protection terms and Standard Contractual Clauses are intended to cover that transfer. Ask through the repository if you would like more detail.</p>
+        <h5 class="mt-4">Newsletter</h5>
+        <p>Registry entries are not automatically added to the quarterly digest or any mailing list. That requires a separate, explicit opt-in checkbox on the submission form.</p>
 
-        <h5>Registering on someone else's behalf</h5>
-        <p>If you are listing a colleague rather than yourself as the contact, make sure they know their name and email will be published publicly before you submit. The form asks you to confirm this.</p>
+        <h5 class="mt-4">How long we keep it</h5>
+        <p>Entries are reviewed roughly once a year (the "re-confirmation" cycle). An entry that isn't reconfirmed after two cycles is archived, and the contact's name and email are removed or redacted at that point. You don't need to wait for that cycle — see "Your rights" below.</p>
+
+        <h5 class="mt-4">Your rights</h5>
+        <p>If you are the contact listed on an entry (or you listed someone else and they've changed their mind), you can at any time:</p>
+        <ul>
+          <li><strong>Correct</strong> the entry — e.g., update the contact email or project status.</li>
+          <li><strong>Remove</strong> the entry, or just the contact details, from the public registry.</li>
+          <li><strong>Ask what's stored</strong> about you in the registry.</li>
+        </ul>
+        <p>To do any of these, open a GitHub issue tagged <code>privacy-request</code> in the
+          <a href="https://github.com/energy-modelling-tools/osemosys" target="_blank">registry repository</a>,
+          or email the registry curator at <strong>[curator-email@example.org]</strong>. Requests are handled by
+          the current registry curator and we aim to action them within 5 business days.</p>
+
+        <h5 class="mt-4">Where this is hosted</h5>
+        <p>Entries are stored in the registry's GitHub repository. GitHub, Inc. is based in the United States; if you are in the EU/UK, this means your data is transferred outside the EU/UK, which GitHub's own data protection terms and Standard Contractual Clauses are intended to cover. Contact the registry curator if you'd like more detail on this.</p>
+
+        <h5 class="mt-4">Submitting someone else's details</h5>
+        <p>If you are registering a project on behalf of a colleague and listing them (not yourself) as the contact, please make sure they know their name and email will be published publicly before you submit — the submission form asks you to confirm this.</p>
+
+        <hr class="my-4">
+        <p class="text-muted" style="font-size: 0.85rem;"><em>This notice covers the registry only. It doesn't replace or override your own institution's data protection policies.</em></p>
       </div>
     </div>
 
