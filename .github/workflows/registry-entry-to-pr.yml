@@ -1,0 +1,155 @@
+name: Registry Entry to PR
+
+on:
+  issues:
+    types: [opened, edited, labeled, reopened]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: registry-entry-${{ github.event.issue.number }}
+  cancel-in-progress: true
+
+jobs:
+  create-pr:
+    if: >-
+      github.event.issue.state == 'open' &&
+      contains(github.event.issue.labels.*.name, 'registry-entry')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Parse the form and update _data/registry.yml
+        id: parse
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const issueNumber = context.issue.number;
+            const body = (context.payload.issue.body || '').replace(/\r\n/g, '\n');
+
+            // Issue forms render each field as "### <label>\n\n<value>".
+            const fields = {};
+            for (const chunk of body.split(/^###\s+/m).slice(1)) {
+              const nl = chunk.indexOf('\n');
+              const label = (nl === -1 ? chunk : chunk.slice(0, nl)).trim();
+              const value = nl === -1 ? '' : chunk.slice(nl + 1).trim();
+              fields[label] = value === '_No response_' ? '' : value;
+            }
+
+            const get = (label) => (fields[label] || '').trim();
+            const checked = (label) => /-\s*\[x\]/i.test(fields[label] || '');
+
+            const entry = {
+              project_name: get('Project name'),
+              institutions: get('Institution(s)'),
+              country_region: get('Country / region'),
+              scope: get('Scope'),
+              status: get('Status'),
+              start_date: get('Start date'),
+              contact_name: get('Contact name'),
+              contact_email: get('Contact email'),
+              linked_outputs: get('Linked outputs (optional)'),
+              funders: get('Funder(s) (optional)'),
+              tags: get('Tags (optional)').split(',').map(t => t.trim()).filter(Boolean),
+            };
+
+            const required = ['project_name', 'institutions', 'country_region', 'scope', 'status', 'start_date', 'contact_name', 'contact_email'];
+            const missing = required.filter(k => !entry[k]);
+            const problems = [];
+            if (missing.length) problems.push(`Missing required fields: ${missing.map(m => '`' + m + '`').join(', ')}`);
+            if (!checked("Consent to publish the contact's details")) problems.push('The contact-consent box is not ticked.');
+            if (!checked('Privacy acknowledgement')) problems.push('The privacy acknowledgement box is not ticked.');
+
+            if (problems.length) {
+              await github.rest.issues.createComment({
+                ...context.repo,
+                issue_number: issueNumber,
+                body: [
+                  '⚠️ **This registry entry could not be turned into a pull request yet.**',
+                  '',
+                  ...problems.map(p => `- ${p}`),
+                  '',
+                  'Edit the issue to fix this and a pull request will be opened automatically.'
+                ].join('\n')
+              });
+              core.setOutput('should_run', 'false');
+              return;
+            }
+
+            // JSON strings are valid YAML double-quoted scalars.
+            const q = (s) => JSON.stringify(String(s));
+            const lines = [
+              `- project_name: ${q(entry.project_name)}`,
+              `  institutions: ${q(entry.institutions)}`,
+              `  country_region: ${q(entry.country_region)}`,
+              `  scope: ${q(entry.scope)}`,
+              `  status: ${q(entry.status)}`,
+              `  start_date: ${q(entry.start_date)}`,
+              `  contact_name: ${q(entry.contact_name)}`,
+              `  contact_email: ${q(entry.contact_email)}`,
+            ];
+            if (entry.linked_outputs) lines.push(`  linked_outputs: ${q(entry.linked_outputs)}`);
+            if (entry.funders) lines.push(`  funders: ${q(entry.funders)}`);
+            lines.push(`  tags: [${entry.tags.map(q).join(', ')}]`);
+            lines.push(`  last_confirmed: ${q(new Date().toISOString().slice(0, 10))}`);
+            lines.push(`  issue: ${issueNumber}`);
+            const block = lines.join('\n');
+
+            // Replace this issue's block if it was merged before, otherwise append.
+            const filePath = '_data/registry.yml';
+            const original = fs.existsSync(filePath) ? fs.readFileSync(filePath, 'utf8').replace(/\r\n/g, '\n') : '';
+            const fileLines = original.split('\n');
+            const starts = [];
+            fileLines.forEach((l, i) => { if (/^- /.test(l)) starts.push(i); });
+
+            let replaced = false;
+            for (let s = 0; s < starts.length; s++) {
+              const from = starts[s];
+              let to = s + 1 < starts.length ? starts[s + 1] : fileLines.length;
+              while (to > from + 1 && !/^\s+\S/.test(fileLines[to - 1])) to--;
+              const blockLines = fileLines.slice(from, to);
+              if (blockLines.some(l => new RegExp(`^\\s+issue:\\s*${issueNumber}\\s*$`).test(l))) {
+                fileLines.splice(from, to - from, ...block.split('\n'));
+                replaced = true;
+                break;
+              }
+            }
+
+            let updated;
+            if (replaced) {
+              updated = fileLines.join('\n');
+            } else {
+              updated = original.replace(/\n*$/, '') + '\n\n' + block + '\n';
+            }
+            fs.writeFileSync(filePath, updated, 'utf8');
+
+            core.setOutput('project_name', entry.project_name);
+            core.setOutput('newsletter', checked('Newsletter (separate from the registry listing)') ? 'yes' : 'no');
+            core.setOutput('should_run', 'true');
+
+      - name: Create Pull Request
+        if: steps.parse.outputs.should_run == 'true'
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Add registry entry from issue #${{ github.event.issue.number }}"
+          title: "Registry: ${{ steps.parse.outputs.project_name }}"
+          body: |
+            This PR was automatically created from issue #${{ github.event.issue.number }}.
+
+            **Changes:**
+            - Added or updated the entry for **${{ steps.parse.outputs.project_name }}** in `_data/registry.yml`
+
+            Newsletter opt-in: ${{ steps.parse.outputs.newsletter }} (not written to the registry — add the contact to the mailing list by hand if yes).
+
+            Please check the details against the issue before merging. Editing the issue updates this PR.
+
+            ---
+            Closes #${{ github.event.issue.number }}
+          branch: "registry-entry-issue-${{ github.event.issue.number }}"
+          delete-branch: true
+          labels: registry-entry
