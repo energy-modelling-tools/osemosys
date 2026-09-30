@@ -208,7 +208,7 @@ permalink: /contact/
         </ul>
         <p>To do any of these, open a GitHub issue tagged <code>privacy-request</code> in the
           <a href="https://github.com/energy-modelling-tools/osemosys" target="_blank">registry repository</a>,
-          or email the registry curator at <strong>[curator-email@example.org]</strong>. Requests are handled by
+          or email the registry curator at <strong>fernando.plazas-nino@climatecompatiblegrowth.com</strong>. Requests are handled by
           the current registry curator and we aim to action them within 5 business days.</p>
 
         <h5 class="mt-4">Where this is hosted</h5>
