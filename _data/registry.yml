@@ -24,3 +24,16 @@
 #   tags: []             # optional
 #   last_confirmed: ""   # set by the maintainer at merge or reconfirmation time
 #   issue: 0             # number of the registration issue
+
+- project_name: "OSeMOSYS-COL"
+  institutions: "Universidad Industrial de Santander"
+  country_region: "Colombia"
+  scope: "Whole energy system"
+  status: "Completed"
+  start_date: "2023-03"
+  contact_name: "Fernando Plazas"
+  contact_email: "fernando.plazas11@gmail.com"
+  linked_outputs: "https://zenodo.org/records/8305752"
+  tags: ["national energy plan", "energy policy", "energy transition"]
+  last_confirmed: "2026-09-30"
+  issue: 11
