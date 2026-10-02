@@ -37,3 +37,16 @@
   tags: ["national energy plan", "energy policy", "energy transition"]
   last_confirmed: "2026-09-30"
   issue: 11
+
+- project_name: "HERMES (HEllenic Regional Model for the Electricity System)"
+  institutions: "NTUA"
+  country_region: "Greece"
+  scope: "Power sector only"
+  status: "Active"
+  start_date: "2025"
+  contact_name: "Anastasios Karamaneas"
+  contact_email: "akaramaneas@epu.ntua.gr"
+  linked_outputs: "https://github.com/akaramaneas/HERMES"
+  tags: []
+  last_confirmed: "2026-09-30"
+  issue: 13
