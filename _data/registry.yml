@@ -38,6 +38,18 @@
   last_confirmed: "2026-09-30"
   issue: 11
 
+- project_name: "Malawi Vision 2063"
+  institutions: "Malawi University of Science and Technology"
+  country_region: "Malawi"
+  scope: "Power sector only"
+  status: "Active"
+  start_date: "2025-02"
+  contact_name: "Alfred Kampira Levison"
+  contact_email: "alfredlevison@gmail.com"
+  tags: []
+  last_confirmed: "2026-10-01"
+  issue: 15
+  
 - project_name: "HERMES (HEllenic Regional Model for the Electricity System)"
   institutions: "NTUA"
   country_region: "Greece"
