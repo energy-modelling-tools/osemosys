@@ -62,3 +62,15 @@
   tags: []
   last_confirmed: "2026-09-30"
   issue: 13
+
+- project_name: "Long-term planning studies for the reform of Iran's fuel mix"
+  institutions: "Institute of International Energy Studies (IIES)"
+  country_region: "Iran"
+  scope: "Whole energy system"
+  status: "Active"
+  start_date: "2025"
+  contact_name: "Amir Hossein Fakehi Khorasani"
+  contact_email: "a.fakehi@gmail.com"
+  tags: []
+  last_confirmed: "2026-10-18"
+  issue: 17
