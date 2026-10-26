@@ -74,3 +74,16 @@
   tags: []
   last_confirmed: "2026-10-18"
   issue: 17
+
+- project_name: "Design and simulation of a wave energy converter (WEC) for equatorial sea conditions, with emphais in Galapagos"
+  institutions: "Universidad San Francisco de Quito (USFQ), Escuela Politécnica Nacional (EPN), Escuela Politécnica de Litoral (ESPOL)"
+  country_region: "Ecuador/South America"
+  scope: "Power sector only"
+  status: "Completed"
+  start_date: "2022"
+  contact_name: "Rafael Soria"
+  contact_email: "rsoriap@usfq.edu.ec"
+  funders: "CEDIA"
+  tags: ["Galapagos"]
+  last_confirmed: "2026-10-26"
+  issue: 19
