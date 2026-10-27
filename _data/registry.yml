@@ -101,3 +101,17 @@
   tags: ["Energy transition", "Bolivia", "Model linking", "Energy planning"]
   last_confirmed: "2026-10-26"
   issue: 21
+
+- project_name: "BCNexus"
+  institutions: "Simon Fraser University"
+  country_region: "British Columbia"
+  scope: "CLEWs nexus (Climate-Land-Energy-Water)"
+  status: "Active"
+  start_date: "2022"
+  contact_name: "Md Eliasinul Islam"
+  contact_email: "elias_islam@sfu.ca"
+  linked_outputs: "https://github.com/DeltaE/BC_Nexus, https://doi.org/10.1016/j.rset.2024.100080"
+  funders: "Pacific Institute of Climate Solutions (PICS)"
+  tags: ["BC", "sustainable energy", "renewable energy"]
+  last_confirmed: "2026-10-27"
+  issue: 25
