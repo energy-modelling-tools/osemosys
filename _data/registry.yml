@@ -74,3 +74,17 @@
   tags: []
   last_confirmed: "2026-10-18"
   issue: 17
+
+- project_name: "OSeMOSYS and DispaSet linking"
+  institutions: "Université de Liège, Universidad Mayor de San Simon"
+  country_region: "Bolivia"
+  scope: "Power sector only"
+  status: "Completed"
+  start_date: "2022"
+  contact_name: "Carlos A. A. Fernandez Vazquez"
+  contact_email: "caa.fernandez@uliege.be"
+  linked_outputs: "10.1016/j.rser.2023.113946"
+  funders: "The Belgian cooperation ARES"
+  tags: ["Energy transition", "Bolivia", "Model linking", "Energy planning"]
+  last_confirmed: "2026-10-26"
+  issue: 21
