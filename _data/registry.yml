@@ -102,6 +102,19 @@
   last_confirmed: "2026-10-26"
   issue: 21
 
+- project_name: "decarbonization pathways for Canada 2070"
+  institutions: "Simon Fraser University, University of British Columbia, Carleton University"
+  country_region: "Canada"
+  scope: "Power sector only"
+  status: "Active"
+  start_date: "2026"
+  contact_name: "Md Eliasinul Islam, Taco Niet"
+  contact_email: "elias_islam@sfu.ca"
+  linked_outputs: "https://github.com/DeltaE/C2070"
+  tags: ["renewable energy", "decarbonization", "Canada", "open-source", "sustainable energy"]
+  last_confirmed: "2026-10-27"
+  issue: 27
+  
 - project_name: "BCNexus"
   institutions: "Simon Fraser University"
   country_region: "British Columbia"
