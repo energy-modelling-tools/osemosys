@@ -115,3 +115,15 @@
   tags: ["BC", "sustainable energy", "renewable energy"]
   last_confirmed: "2026-10-27"
   issue: 25
+  
+- project_name: "Italian Power Sector Long-Term Energy Model (OSeMOSYS)"
+  institutions: "Politecnico di Torino – MOREnergy Lab | Energy Center"
+  country_region: "Italy"
+  scope: "Power sector only"
+  status: "Completed"
+  start_date: "2023"
+  contact_name: "Caterina Carà"
+  contact_email: "caterina.cara@polito.it"
+  tags: ["OSeMOSYS", "Italy", "energy system modelling", "energy transition", "energy planning"]
+  last_confirmed: "2026-10-27"
+  issue: 23
