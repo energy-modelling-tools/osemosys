@@ -140,3 +140,17 @@
   tags: ["OSeMOSYS", "Italy", "energy system modelling", "energy transition", "energy planning"]
   last_confirmed: "2026-10-27"
   issue: 23
+
+- project_name: "OSeMOSYS-GR"
+  institutions: "Technoeconomics of Energy Systems laboratory (TEESlab), University of Piraeus (UniPi)"
+  country_region: "Greece; national scale"
+  scope: "Power sector only"
+  status: "Completed"
+  start_date: "2023"
+  contact_name: "Nikos Kleanthis"
+  contact_email: "kleanthis@unipi.gr"
+  linked_outputs: "https://doi.org/10.1016/j.apenergy.2026.128449"
+  funders: "Horizon 2020 ENCLUDE project; Horizon Europe IAM COMPACT project"
+  tags: ["operational flexibility; employment opportunities; inequalities in energy affordability"]
+  last_confirmed: "2026-11-06"
+  issue: 29
